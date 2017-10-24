@@ -99,6 +99,10 @@ p {
     text-align: center;
     font-size: 24px;
   }
+
+  @include phone{
+    font-size: 20px;
+  }
 }
 
 .center-h2 {
@@ -117,6 +121,10 @@ p {
   @include tablets{    
     font-size: 22px;
     text-align: center;
+  }
+
+  @include phone{
+    font-size: 19px;
   }
 }
 
@@ -164,7 +172,7 @@ p {
     
     padding-bottom: 10px;
     text-align: center;
-    padding-top: 40px;
+    
   }
 }
 
@@ -255,6 +263,10 @@ label#navtoggler {
   border: 0.6em solid #000;
   border-width: 0.6em 0;
   cursor: pointer;
+
+  @include phone{
+    right: 35%;
+  }
   &::before {
     /* inner strip inside label */
     content: "";
@@ -506,6 +518,10 @@ nav {
     @include tablets {
       font-size: 33px;
     }
+
+    @include phones{
+      font-size: 26px;
+    }
 }
 
 .action{
@@ -551,6 +567,10 @@ nav {
     @include tablets {
       font-size: 37px;
     }
+
+    @include phones{
+      font-size: 30px;
+    }
 }
 
 .two span {
@@ -583,6 +603,15 @@ input {
   color: #ffffff;
   font-family: 'Arial';
   font-size: 40px;
+
+  @include phones{
+    width: 300px;
+    font-size: 30px;
+  }
+
+  @include phone{
+    width: 260px;
+  }
   &:active {
     outline: none;
   }
@@ -629,6 +658,10 @@ input {
   background-size: cover;
   height: auto;
   padding-bottom: 150px;
+
+  @include phones{
+    padding-bottom: 62px;
+  }
 }
 
 .second-title{
@@ -641,6 +674,15 @@ input {
 
   @include tablets{
     font-size: 22px;
+  }
+
+  @include phones{
+    padding-top: 111px;
+    margin-bottom: 40px;    
+  }
+
+  @include phone{
+    font-size: 18px;
   }
 
   span{
@@ -710,6 +752,10 @@ input {
   font-size: 27px;
   color: #000;
 
+  @include phone{
+    font-size: 23px;
+  }
+
   span{
     color: #b80303;
     font-weight: 600;
@@ -720,6 +766,10 @@ input {
   font-size: 27px;
   color: #000;
 
+   @include phone{
+    font-size: 23px;
+  }
+
   span{    
     font-weight: 600;
   }
@@ -728,6 +778,10 @@ input {
 .par-3{
   font-size: 30px;  
   color: #000;
+
+   @include phone{
+    font-size: 26px;
+  }
 
   span{
     text-decoration: line-through;
@@ -741,6 +795,10 @@ input {
 
 .third{
   margin-bottom: 100px;
+
+  @include phones{
+    margin-bottom: 40px;
+  }
 }
 
 .title-third{
@@ -770,6 +828,10 @@ input {
 
 .fourth {
   margin-bottom: 100px;
+
+  @include phones{
+    margin-bottom: 40px;
+  }
 }
 
 .title-title{
@@ -953,6 +1015,16 @@ input {
     border: none;  
     box-shadow: none;
     margin-bottom: 0px;
+
+     @include phones{
+      width: 300px;
+      font-size: 30px;
+    }
+
+    @include phone{
+      width: 260px;
+    }
+
     &:active {
       outline: none;
     }
@@ -1168,4 +1240,10 @@ a {
 
 .bx-wrapper{
   margin-bottom: 0px;
+}
+
+.col-xxs{
+  @include phone{
+    width: 100%;
+  }
 }
