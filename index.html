@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="" name="author">
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta content="ie=edge" http-equiv="x-ua-compatible">
+		<link rel="icon" href="./img/favicon.ico" type="image/png">
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/png">
+		<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ouibounce.min.css">
+		<title>Беспроводной светильник</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<section class="header">
+			<section class="header-logo">
+				<div class="gray hidden-xs"></div>
+				<div class="container">
+					<div class="row row-header">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<div class="header-img"><img class="img-fluid" src="img/logo.png"></div>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<div class="header-text">
+								<p class="svet-p">Магазин беспроводных светильников с датчиком движения</p>
+								<p class="p-header">Доставка по всей России и СНГ</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<div class="telephone">
+								<p>8-800-350-26-06</p>
+							</div>
+							<div class="phone-descr"> 
+								<p>звонок бесплатный        </p>
+							</div>
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-menu">
+							<div class="col-center">
+								<div class="menuwrapper">
+									<input id="togglebox" type="checkbox">
+									<label id="navtoggler" for="togglebox"></label>
+									<nav id="expand-fullpagemenu">
+										<label id="closex" for="togglebox"> </label>
+										<ul>
+											<li><a href="#header" onclick="expandfullscreenmenu('close')">Главная                                        </a></li>
+											<li><a href="#katalog" onclick="expandfullscreenmenu('close')">Каталог</a></li>
+											<li><a href="#chars" onclick="expandfullscreenmenu('close')">Характеристики                                        </a></li>
+											<li><a href="#reviews" onclick="expandfullscreenmenu('close')">Отзывы</a></li>
+											<li><a href="#delivery" onclick="expandfullscreenmenu('close')">Доставка и оплата</a></li>
+										</ul>
+									</nav><br><span class="span"><a href="#" onclick="expandfullscreenmenu('open')">Открыть меню</a><br><a href="#" onclick="expandfullscreenmenu()">Открыть меню</a><br><a href="#" onclick="expandfullscreenmenu('close')">Открыть меню</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="hid">
+					<input id="togglebox" type="checkbox">
+					<label id="navtoggler" for="togglebox" style="top:4px;left:10px;margin-top:15px;"></label>
+				</div>
+			</section>
+			<!-- HEADER CENTER-->
+			<section class="header-center"><a name="header"></a>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 hidden-xs">
+							<div class="center-right">
+								<div class="center-image">
+									<h1 class="center-h1">Беспроводной светильник с датчиком движения</h1>
+									<h2 class="center-h2">очень просто устанавливается на любую поверхность</h2>
+								</div>
+							</div>
+							<div class="center-content">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-4 bord">
+										<div class="content-item">
+											<div class="item-pic"><img class="img-fluid img-title" src="img/ok.png"></div>
+											<div class="item-text">
+												<p> <span>100% </span>гарантия качества                                   </p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 bord">
+										<div class="content-item">
+											<div class="item-pic"><img class="img-fluid" src="img/money.png"></div>
+											<div class="item-text">
+												<p>оплата при получении</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<div class="item-pic"><img class="img-fluid" src="img/delivery.png"></div>
+										<div class="item-text">
+											<p>быстрая доставка</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="center-description">
+								<p class="paragpaph-descr">Скидка <span class="up">53% </span>за <span class="price">2490 р. </span><span class="price-line">5300 р.</span></p><a href="#form">
+									<input class="btn" type="submit" value="ЗАКАЗАТЬ"></a>
+								<p class="promo">Акционных товаров осталось : <span>14 шт.</span></p>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 hidden-lo"><img class="img-fluid img-title" src="img/light-2.png"></div>
+						<div class="col-12 hidden-md hidden-lg hidden-sm">                 
+							<h1 class="center-h1">Беспроводной светильник с датчиком движения</h1>
+							<h2 class="center-h2">очень просто устанавливается на любую поверхность </h2>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section class="hidden">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="center">
+							<div class="row">
+								<div class="col col-xs-4 bord">
+									<div class="content-item">
+										<div class="item-pic"><img class="img-fluid" src="img/ok.png"></div>
+										<div class="item-text">
+											<p>100% гарантия качества                                   </p>
+										</div>
+									</div>
+								</div>
+								<div class="col col-xs-4 bord">
+									<div class="content-item">
+										<div class="item-pic"><img class="img-fluid" src="img/money.png"></div>
+										<div class="item-text">
+											<p>оплата при получении</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col-xs-4">
+									<div class="item-pic"><img class="img-fluid" src="img/delivery.png"></div>
+									<div class="item-text">
+										<p>быстрая доставка</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="description">
+							<p class="paragpaph-descr">Скидка <span class="up">53% </span>за <span class="price">2490 р.</span><span class="price-line">5300 р.</span></p><a href="#form">
+								<input class="btn" type="submit" value="ЗАКАЗАТЬ"></a>
+							<p class="promo">Акционных товаров осталось : <span>14 </span>шт. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- KATALOG AND CHARS-->
+		<section class="second"><a name="katalog"></a>
+			<div class="container">  
+				<h1 class="second-title"><span>Универсальный светильник,                </span>установи где тебе нужно  </h1>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="image-middle"><img class="img-fluid" src="./img/1.png"></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="image-middle"><img class="img-fluid" src="./img/2.png"></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="image-middle"><img class="img-fluid" src="./img/3.png"></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="image-middle"><img class="img-fluid" src="./img/4.png"></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="image-middle"><img class="img-fluid" src="./img/5.png"></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="image-middle"><img class="img-fluid" src="./img/6.png"></div>
+					</div>
+				</div>
+			</div><a name="chars">                 </a>
+			<div class="container hidden-xs">                
+				<div class="row"> 
+					<div class="titles">      
+						<h1 class="title-second">Что такое беспроводной светильник с датчиком движения</h1>
+						<h2 class="subtitle-second">"Motion Activated Cordless Light"</h2>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12"> 
+						<p class="second-paragpaph">Светильник беспроводной с датчиком движения Motion Activated Cordless Light – очень просто устанавливается на любую поверхность, можно установить как в помещении, так и за его пределами. Благодаря подвижной базе, можно сфокусировать свет именно в том направлении, которое подходит больше всего. Фонарик автоматически включается при обнаружении движения в радиусе до 25м и отключается при отсутствии движения в течение 30 секунд. Осветительная часть вращается на 360 градусов, полностью защищен от атмосферных воздействий.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="row-second">
+							<p class="par-1">
+								 Заказать со скидкой <span>53%</span></p>
+							<p class="par-2">
+								 Новая цена : <span>2490 р.</span></p>
+							<p class="par-3">
+								 Старая цена : <span>5300 р.        </span></p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12"> 
+						<div class="action"> <a href="#form">
+								<input class="btn" type="submit" value="ЗАКАЗАТЬ"></a>
+							<p class="promo">Акционных товаров осталось : <span class="down">14 шт. </span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="hidden">
+			<div class="container">                
+				<div class="row"> 
+					<div class="titles">      
+						<h1 class="title-second">Что такое беспроводной светильник с датчиком движения</h1>
+						<h2 class="subtitle-second">"Motion Activated Cordless Light"</h2>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12"> 
+						<p class="second-paragpaph">Светильник беспроводной с датчиком движения Motion Activated Cordless Light – очень просто устанавливается на любую поверхность, можно установить как в помещении, так и за его пределами. Благодаря подвижной базе, можно сфокусировать свет именно в том направлении, которое подходит больше всего. Фонарик автоматически включается при обнаружении движения в радиусе до 25м и отключается при отсутствии движения в течение 30 секунд. Осветительная часть вращается на 360 градусов, полностью защищен от атмосферных воздействий.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="row-second">
+							<p class="par-1">
+								 Заказать со скидкой <span>53%</span></p>
+							<p class="par-2">
+								 Новая цена : <span>2490 р.</span></p>
+							<p class="par-3">
+								 Старая цена : <span>5300 р.        </span></p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12"> 
+						<div class="row-third"> <a href="#form">
+								<input class="btn" type="submit" value="ЗАКАЗАТЬ"></a>
+							<p class="promo">Акционных товаров осталось : <span class="down">14 шт.   </span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="third">
+			<div class="container">
+				<h1 class="title-third"> <span>П</span>реимущества</h1>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<ul class="list">
+						<li>- Энергоэффективный</li>
+						<li>- Яркость светового потока до 72 люмен</li>
+						<li>- Имеет 7 ярких LED лампочек, позволяющих скорректировать свет под любым углом</li>
+						<li>- Девайс беспроводной и имеет защиту от непогоды</li>
+						<li>- Поставляется с датчиками движения</li>
+						<li>- Не надо включать и выключать</li>
+						<li>- Выполнен из качественного экологически чистого безопасного материала                                                        </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- REVIEWS-->
+		<section class="fourth"><a name="reviews"></a>
+			<div class="container">
+				<h2 class="title-title">Отзывы наших клиентов</h2>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="opinion">
+							<div class="opinion-img opinion-left"><img class="img-fluid" src="img/kirill.png">
+								<p>Кирилл,<br>г. Москва</p>
+							</div>
+							<div class="opinion-text">
+								<p>Здравствуйте! У меня в гараже на даче есть полка в углу, а свет туда не доходит. Поэтому я заказал этот беспроводной светильник. остался очень доволен, светильник сам загорается. Спасибо!!! На днях сделаю второй заказ!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 flex-lg-first">
+						<div class="opinion">
+							<div class="opinion-img opinion-left"><img class="img-fluid" src="img/svetlana.png">
+								<p>Светлана,<br>г. Ростов</p>
+							</div>
+							<div class="opinion-text">
+								<p>Заказывала этот светильник и установила в подсобку. Не всегда удобно носить с собой фонарь, так получилось что свет туда не провели. А этот светильник сильно выручает! Доставили ао время, искать вещи в подсобке стало легче.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="opinion">
+							<div class="opinion-img opinion-left"><img class="img-fluid" src="img/alex.png">
+								<p>Александр,<br>г. Москва</p>
+							</div>
+							<div class="opinion-text">
+								<p>Купил для дачи, мест где можно установить очень много. Устал каждый раз ходить за фонариком. А теперь как только начинаешь открывать дверь, светильник сам загорается. Очень удобно! спасибо!!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- DELIVERY-->
+		<section class="fifth"><a name="delivery"></a>
+			<div class="container">
+				<h2 class="title-title">Доставка и Оплата</h2>
+				<div class="row">
+					<div class="col delivery">
+						<div class="delivery-img"><img src="img/pochta.png"></div>
+						<div class="delivery-text">
+							<p>Если нет возможности отправить Вам заказ курьером, мы отправим его ПОЧТОЙ РФ первым классом.</p>
+							<p>Срок доставки от <b>7 </b>до <b>14 </b>дней, в зависимости от региона, стоимость по РФ <b>350 </b>руб.</p>
+							<p>Мы являемся крупным федеральным клиентом почты России и поэтому у вас не будет комиссии на почте.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col delivery">
+						<div class="delivery-img"><img src="img/send.png"></div>
+						<div class="delivery-text delivery-text_two">
+							<p>Доставка осуществляется до вашей двери в любом городе России.</p>
+							<p>
+								 Срок доставки от 2 до 7 дней, в зависимости от региона, стоимость по РФ <b>350 </b>руб.        </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FORM ANG GALLERY-->
+		<section class="sixth"><a name="form"></a><a name="gallery"></a>
+			<div class="container">           
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="slider"><img src="img/light.png"><img src="img/light.png"><img src="img/light.png"><img src="img/light.png"><img src="img/light.png"></div>
+					</div>
+					<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+						<p class="paragpaph">* номер набора уточнит менеджер</p>
+						<form class="form" action="https://borisovden.e-autopay.com/checkout/save_order_data.php" method="post" target="_blank" onsubmit="var re = /^((8|+7|7)[- ]?)?((?d{3})?[- ]?)[d- ]{7,10}$/i; if(!re.test(this.phone.value.trim())) {alert('Пожалуйста проверьте правильность заполнения поля Телефон!'); return false;}else{ga('send', 'event', 'send', 'click', 'send', '1');(new Image).src='//recreativ.ru/trck/adv/66444?act=conversion&amp;ref='+encodeURIComponent(top.location)+'&amp;rnd='+Math.floor(Math.random()*999);}">
+							<input class="name hidden-xs hidden-sm" type="text" name="name" placeholder="ИМЯ">
+							<input class="phone" id="phone1" type="tel" name="phone" placeholder="НОМЕР ТЕЛЕФОНА" required="">
+							<input class="email" type="email" name="email" placeholder="E-MAIL" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+							<input class="address hidden-xs hidden-sm" type="text" name="address" placeholder="АДРЕС ДОСТАВКИ">
+							<select class="ea_select ea_pay_mode" name="pay_mode" style="display:none;">
+								<option value="3">Наложенный платеж</option>
+							</select>
+							<input type="hidden" name="ordername" value="Первый экран">
+							<input id="tovar_id" type="hidden" name="tovar_id" value="329855">
+							<input type="hidden" name="additional_field1" value="">
+							<input type="hidden" name="form_id" value="13986">
+							<div class="btn-form">
+								<input class="btn" type="submit" value="ЗАКАЗАТЬ">
+							</div>
+							<div style="width: 100%; margin: 0 auto; text-align: center;  color:#000;background:#fff; font-weight: bold; font-size: 11px;">Нажимая на кнопку, вы соглашаетесь с условиями <br><a href="politics.html" target="_blank">Политики конфиденциальности</a></div>
+						</form>
+						<p class="promo">Акционных товаров осталось : <span>14 шт.</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER-->
+		<footer class="contacts">
+			<div class="container">
+				<div class="row order">
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<div class="footer-last"><img class="img-fluid" src="img/logo-footer.png"></div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="confidential">
+							<p>© САЙТ ЗАЩИЩЕН АВТОРСКИМИ ПРАВАМИ. ЛЮБОЕ КОПИРОВАНИЕ МАТЕРИАЛОВ САЙТА БЕЗ СОГЛАСОВАНИЯ И СПРАВООБЛАДАТЕЛЕМ ВЛЕЧЕТ К УГОЛОВНОЙ ОТВЕТСТВЕННОСТИ (СТ. 146 УК РФ). ЛЮБОЕ КОПИРОВАНИЕ ИНФОРМАЦИИ ЗАПРЕЩЕНО.</p>
+							<p class="text-center"><img class="img-fluid" src="img/ogrn.png"><img class="img-fluid" src="img/adr.png"></p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">    
+						<div class="footer-email">
+							<p> HELPMAGAZINA@GMAIL.COM                              </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/mask.js"></script>
+		<script src="js/ouibounce.js"></script>
+		<script src="js/timeme.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script src="js/app.js" defer=""></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<div id="ouibounce-modal">
+			<div class="underlay"></div>
+			<div class="modal">
+				<div class="modal-title">
+					<h3>СТАНЬТЕ ОБЛАДАТЕЛЕМ БЕСПРОВОДНОГО СВЕТИЛЬНИКА, КАК ЭТО СДЕЛАЛИ УЖЕ 10.000 КЛИЕНТОВ ПО РФ И СНГ</h3>
+				</div>
+				<div class="modal-body">
+					<div class="colmd9"><img src="img/light.png" style="max-width: 210px;margin-bottom:20px;"> - 
+						<p class="textobm">Оплата при получении*<br><br>Доставка по РФ:<br>- Почта от 5-14 дней<br>- Курьер от 1 - 7 дней</p>
+					</div>
+					<div class="colmd3"><span class="zagolform">Зачем уходить,</span><br><span class="formstr2">пока не получил консультацию</span><span class="voprosik">?</span>
+						<form id="recall" action="https://borisovden.e-autopay.com/checkout/save_order_data.php" method="post" target="_blank" onsubmit="var re = /^((8|+7|7)[- ]?)?((?d{3})?[- ]?)[d- ]{7,10}$/i; if(!re.test(this.phone.value.trim())) {alert('Пожалуйста проверьте правильность заполнения поля Телефон!'); return false;}else{ga('send', 'event', 'send', 'click', 'send', '1');(new Image).src='//recreativ.ru/trck/adv/66444?act=conversion&amp;ref='+encodeURIComponent(top.location)+'&amp;rnd='+Math.floor(Math.random()*999);}">
+							<p class="managerobform">
+								заполните форму заявки и менеджер
+								компании свяжется с вами в течении 1 часа
+							</p>
+							<input class="name hidden-xs hidden-sm" type="text" name="name" placeholder="Введите ФИО"><br>
+							<input class="phone" id="phone3" type="tel" name="phone" placeholder="X-XXX-XXX-XX-XX" required=""><br>
+							<input class="email" type="email" name="email" placeholder="E-mail (желательно)" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"><br>
+							<select class="ea_select ea_pay_mode" name="pay_mode" style="display:none;">
+								<option value="3">Наложенный платеж</option>
+							</select>
+							<input id="tovar_id" type="hidden" name="tovar_id" value="330216">
+							<input type="hidden" name="additional_field1" value="">
+							<input id="form_charset" type="hidden" name="form_charset" value="">
+							<input type="hidden" name="form_id" value="33600">
+							<input id="order_page_referer" type="hidden" name="order_page_referer" value="">
+							<input type="submit" name="submit" value="Позвоните мне" style="color:#000;">
+							<div style="width: 100%; margin: 0 auto; text-align: center; margin-top: 3px; color:#000; font-weight: bold; font-size: 12px;">Нажимая на кнопку, вы соглашаетесь с условиями <br class="hidden-lg hidden-md"><a href="politics.html" target="_blank">Политики конфиденциальности</a></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// if you want to use the 'fire' or 'disable' fn,
+			// you need to save OuiBounce to an object
+			var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+			aggressive: true,
+			timer: 0,
+			callback: function() { console.log('ouibounce fired!'); }
+			});
+			$('body').on('click', function() {
+			$('#ouibounce-modal').hide();
+			});
+			$('#ouibounce-modal .modal-footer').on('click', function() {
+			$('#ouibounce-modal').hide();
+			});
+			$('#ouibounce-modal .modal').on('click', function(e) {
+			e.stopPropagation();
+			});
+		</script>
+	</body>
+</html>

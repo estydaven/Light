@@ -1,0 +1,357 @@
+extends _template
+
+block content
+    // HEADER 
+    section.header
+        section.header-logo
+            .gray.hidden-xs
+            .container
+                .row.row-header
+                    .col-lg-3.col-md-3.col-sm-12.col-xs-12
+                        .header-img
+                            img.img-fluid(src='img/logo.png')
+                    .col-lg-5.col-md-5.col-sm-12.col-xs-12
+                        .header-text
+                            p.svet-p Магазин беспроводных светильников с датчиком движения
+                            p.p-header Доставка по всей России и СНГ
+                    .col-lg-3.col-md-3.col-sm-12.col-xs-12
+                        .telephone
+                            p 8-800-350-26-06
+                        .phone-descr 
+                            p звонок бесплатный        
+                    .col-lg-1.col-md-1.col-sm-1.col-xs-1.col-menu
+                        .col-center
+                            .menuwrapper
+                                input#togglebox(type='checkbox')
+                                label#navtoggler(for='togglebox')
+                                nav#expand-fullpagemenu
+                                    label#closex(for='togglebox')  
+                                    ul
+                                        li
+                                            a(href='#header', onclick="expandfullscreenmenu('close')") Главная                                        
+                                        li
+                                            a(href='#katalog', onclick="expandfullscreenmenu('close')") Каталог
+                                        li
+                                            a(href='#chars', onclick="expandfullscreenmenu('close')") Характеристики                                        
+                                        li
+                                            a(href='#reviews', onclick="expandfullscreenmenu('close')") Отзывы
+                                        li
+                                            a(href='#delivery', onclick="expandfullscreenmenu('close')") Доставка и оплата
+                                br
+                                span.span
+                                    a(href='#', onclick="expandfullscreenmenu('open')") Открыть меню
+                                    br
+                                    a(href='#', onclick='expandfullscreenmenu()') Открыть меню
+                                    br
+                                    a(href='#', onclick="expandfullscreenmenu('close')") Открыть меню
+            #hid
+                input#togglebox(type='checkbox')
+                label#navtoggler(for='togglebox', style='top:4px;left:10px;margin-top:15px;')
+        // HEADER CENTER
+        section.header-center
+            a(name='header')
+            .container
+                .row
+                    .col-lg-7.col-md-7.col-sm-12.col-xs-12.hidden-xs
+                        .center-right
+                            .center-image
+                                h1.center-h1 Беспроводной светильник с датчиком движения
+                                h2.center-h2 очень просто устанавливается на любую поверхность
+                                    
+                        .center-content
+                            .row
+                                .col-lg-4.col-md-4.col-sm-4.bord
+                                    .content-item
+                                        .item-pic
+                                            img.img-fluid.img-title(src='img/ok.png')
+                                        .item-text
+                                            p 
+                                                span 100% 
+                                                |гарантия качества                                   
+                                .col-lg-4.col-md-4.col-sm-4.bord
+                                    .content-item
+                                        .item-pic
+                                            img.img-fluid(src='img/money.png')
+                                        .item-text
+                                            p оплата при получении
+                                .col-lg-4.col-md-4.col-sm-4
+                                    .item-pic
+                                        img.img-fluid(src='img/delivery.png')
+                                    .item-text
+                                        p быстрая доставка
+                        .center-description
+                            p.paragpaph-descr
+                                | Скидка 
+                                span.up 53% 
+                                | за 
+                                span.price 2490 р. 
+                                span.price-line 5300 р.
+                            a(href='#form')
+                                input.btn(type='submit', value='ЗАКАЗАТЬ')
+                            p.promo
+                                | Акционных товаров осталось : 
+                                span 14 шт.
+                                
+                    .col-lg-5.col-md-5.col-sm-12.col-xs-12.hidden-lo
+                        img.img-fluid.img-title(src='img/light-2.png')                    
+                    .col-12.hidden-md.hidden-lg.hidden-sm                  
+                        h1.center-h1 Беспроводной светильник с датчиком движения
+                        h2.center-h2 очень просто устанавливается на любую поверхность 
+    section.hidden
+        .container
+            .row
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .center
+                        .row
+                            .col.col-xs-4.bord
+                                .content-item
+                                    .item-pic
+                                        img.img-fluid(src='img/ok.png')
+                                    .item-text
+                                        p 100% гарантия качества                                   
+                            .col.col-xs-4.bord
+                                .content-item
+                                    .item-pic
+                                        img.img-fluid(src='img/money.png')
+                                    .item-text
+                                        p оплата при получении
+                            .col.col-xs-4
+                                .item-pic
+                                    img.img-fluid(src='img/delivery.png')
+                                .item-text
+                                    p быстрая доставка
+                    .description
+                        p.paragpaph-descr
+                            | Скидка 
+                            span.up 53% 
+                            | за 
+                            span.price 2490 р.
+                            span.price-line 5300 р.
+                        a(href='#form')
+                            input.btn(type='submit', value='ЗАКАЗАТЬ')
+                        p.promo
+                            | Акционных товаров осталось : 
+                            span 14 
+                            | шт. 
+    // KATALOG AND CHARS
+    section.second
+        a(name='katalog')
+        .container   
+            h1.second-title
+                span Универсальный светильник,                
+                | установи где тебе нужно  
+            .row
+                .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                    .image-middle
+                        img.img-fluid(src='./img/1.png')
+                .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                    .image-middle
+                        img.img-fluid(src='./img/2.png')
+                .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                    .image-middle
+                        img.img-fluid(src='./img/3.png')             
+                .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                    .image-middle
+                        img.img-fluid(src='./img/4.png')
+                .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                    .image-middle
+                        img.img-fluid(src='./img/5.png')
+                .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                    .image-middle
+                        img.img-fluid(src='./img/6.png')
+        a(name="chars")                  
+        .container.hidden-xs                 
+            .row 
+                .titles       
+                    h1.title-second Что такое беспроводной светильник с датчиком движения
+                    h2.subtitle-second "Motion Activated Cordless Light"
+                .col-lg-12.col-md-12.col-sm-12 
+                    p.second-paragpaph Светильник беспроводной с датчиком движения Motion Activated Cordless Light – очень просто устанавливается на любую поверхность, можно установить как в помещении, так и за его пределами. Благодаря подвижной базе, можно сфокусировать свет именно в том направлении, которое подходит больше всего. Фонарик автоматически включается при обнаружении движения в радиусе до 25м и отключается при отсутствии движения в течение 30 секунд. Осветительная часть вращается на 360 градусов, полностью защищен от атмосферных воздействий.
+            .row
+                .col-lg-6.col-md-6.col-sm-12
+                    .row-second
+                        p.par-1 
+                            | Заказать со скидкой 
+                            span 53%
+                        p.par-2  
+                            | Новая цена : 
+                            span 2490 р.
+                        p.par-3 
+                            | Старая цена : 
+                            span 5300 р.        
+                .col-lg-6.col-md-6.col-sm-12 
+                    .action  
+                        a(href='#form')
+                            input.btn(type='submit', value='ЗАКАЗАТЬ') 
+                        p.promo
+                            | Акционных товаров осталось : 
+                            span.down 14 шт. 
+                        
+    section.hidden
+        .container                 
+            .row 
+                .titles       
+                    h1.title-second Что такое беспроводной светильник с датчиком движения
+                    h2.subtitle-second "Motion Activated Cordless Light"
+                .col-lg-12.col-md-12.col-sm-12 
+                    p.second-paragpaph Светильник беспроводной с датчиком движения Motion Activated Cordless Light – очень просто устанавливается на любую поверхность, можно установить как в помещении, так и за его пределами. Благодаря подвижной базе, можно сфокусировать свет именно в том направлении, которое подходит больше всего. Фонарик автоматически включается при обнаружении движения в радиусе до 25м и отключается при отсутствии движения в течение 30 секунд. Осветительная часть вращается на 360 градусов, полностью защищен от атмосферных воздействий.
+            .row
+                .col-lg-6.col-md-6.col-sm-12
+                    .row-second
+                        p.par-1 
+                            | Заказать со скидкой 
+                            span 53%
+                        p.par-2  
+                            | Новая цена : 
+                            span 2490 р.
+                        p.par-3 
+                            | Старая цена : 
+                            span 5300 р.        
+                .col-lg-6.col-md-6.col-sm-12 
+                    .row-third 
+                        a(href='#form')
+                            input.btn(type='submit', value='ЗАКАЗАТЬ') 
+                        p.promo
+                            | Акционных товаров осталось : 
+                            span.down 14 шт.   
+    section.third
+        .container
+            h1.title-third 
+                span П
+                | реимущества
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                ul.list
+                    li - Энергоэффективный
+                    li - Яркость светового потока до 72 люмен
+                    li - Имеет 7 ярких LED лампочек, позволяющих скорректировать свет под любым углом
+                    li - Девайс беспроводной и имеет защиту от непогоды
+                    li - Поставляется с датчиками движения
+                    li - Не надо включать и выключать
+                    li - Выполнен из качественного экологически чистого безопасного материала                                                        
+    
+    // REVIEWS
+    section.fourth
+        a(name='reviews')
+        .container
+            h2.title-title Отзывы наших клиентов
+            .row
+                .col-lg-4.col-md-6.col-sm-12
+                    .opinion
+                        .opinion-img.opinion-left
+                            img.img-fluid(src='img/kirill.png')
+                            p
+                                | Кирилл,
+                                br
+                                | г. Москва
+                        .opinion-text
+                            p
+                                | Здравствуйте! У меня в гараже на даче есть полка в углу, а свет туда не доходит. Поэтому я заказал этот беспроводной светильник. остался очень доволен, светильник сам загорается. Спасибо!!! На днях сделаю второй заказ!
+                .col-lg-4.col-md-6.col-sm-12.flex-lg-first
+                    .opinion
+                        .opinion-img.opinion-left
+                            img.img-fluid(src='img/svetlana.png')
+                            p
+                                | Светлана,
+                                br
+                                | г. Ростов
+                        .opinion-text
+                            p
+                                | Заказывала этот светильник и установила в подсобку. Не всегда удобно носить с собой фонарь, так получилось что свет туда не провели. А этот светильник сильно выручает! Доставили ао время, искать вещи в подсобке стало легче.
+                .col-lg-4.col-md-6.col-sm-12
+                    .opinion
+                        .opinion-img.opinion-left
+                            img.img-fluid(src='img/alex.png')
+                            p
+                                | Александр,
+                                br
+                                | г. Москва
+                        .opinion-text
+                            p
+                                | Купил для дачи, мест где можно установить очень много. Устал каждый раз ходить за фонариком. А теперь как только начинаешь открывать дверь, светильник сам загорается. Очень удобно! спасибо!!
+    
+    // DELIVERY
+    section.fifth
+        a(name='delivery')
+        .container
+            h2.title-title Доставка и Оплата
+            .row
+                .col.delivery
+                    .delivery-img
+                        img(src='img/pochta.png')                        
+                    .delivery-text
+                        p
+                            | Если нет возможности отправить Вам заказ курьером, мы отправим его ПОЧТОЙ РФ первым классом.
+                        p
+                            | Срок доставки от 
+                            b 7 
+                            | до 
+                            b 14 
+                            | дней, в зависимости от региона, стоимость по РФ 
+                            b 350 
+                            | руб.
+                        p
+                            | Мы являемся крупным федеральным клиентом почты России и поэтому у вас не будет комиссии на почте.
+            .row
+                .col.delivery
+                    .delivery-img
+                        img(src='img/send.png')                        
+                    .delivery-text.delivery-text_two
+                        p Доставка осуществляется до вашей двери в любом городе России.
+                        p 
+                            | Срок доставки от 2 до 7 дней, в зависимости от региона, стоимость по РФ 
+                            b 350 
+                            | руб.        
+    // FORM ANG GALLERY
+    section.sixth
+        a(name='form')
+        a(name='gallery')
+        .container            
+            .row
+                .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .slider
+                        img(src='img/light.png')
+                        img(src='img/light.png')
+                        img(src='img/light.png')
+                        img(src='img/light.png')
+                        img(src='img/light.png')
+                .col-lg-5.col-md-6.col-sm-12.col-xs-12
+                    p.paragpaph * номер набора уточнит менеджер
+                    form.form(action='https://borisovden.e-autopay.com/checkout/save_order_data.php', method='post', target='_blank', onsubmit="var re = /^((8|\+7|7)[\- ]?)?(\(?\d{3}\)?[\- ]?)[\d\- ]{7,10}$/i; if(!re.test(this.phone.value.trim())) {alert('Пожалуйста проверьте правильность заполнения поля Телефон!'); return false;}else{ga('send', 'event', 'send', 'click', 'send', '1');(new Image).src='//recreativ.ru/trck/adv/66444?act=conversion&ref='+encodeURIComponent(top.location)+'&rnd='+Math.floor(Math.random()*999);}")
+                        input.name.hidden-xs.hidden-sm(type='text', name='name', placeholder='ИМЯ')
+                        input#phone1.phone(type='tel', name='phone', placeholder='НОМЕР ТЕЛЕФОНА', required='')
+                        input.email(type='email', name='email', placeholder='E-MAIL', pattern='([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})')
+                        input.address.hidden-xs.hidden-sm(type='text', name='address', placeholder='АДРЕС ДОСТАВКИ')
+                        select.ea_select.ea_pay_mode(name='pay_mode', style='display:none;')
+                            option(value='3') Наложенный платеж
+                        input(type='hidden', name='ordername', value='Первый экран')
+                        input#tovar_id(type='hidden', name='tovar_id', value='329855')
+                        input(type='hidden', name='additional_field1', value='')
+                        input(type='hidden', name='form_id', value='13986')
+                        .btn-form
+                            input.btn(type='submit', value='ЗАКАЗАТЬ')
+                        div(style='width: 100%; margin: 0 auto; text-align: center;  color:#000;background:#fff; font-weight: bold; font-size: 11px;')
+                            | Нажимая на кнопку, вы соглашаетесь с условиями 
+                            br
+                            a(href='politics.html', target='_blank') Политики конфиденциальности
+                    p.promo
+                        | Акционных товаров осталось : 
+                        span 14 шт.
+                        
+    // FOOTER
+    footer.contacts
+        .container
+            .row.order
+                .col-lg-3.col-md-3.col-sm-12
+                    .footer-last
+                        img.img-fluid(src='img/logo-footer.png')
+                .col-lg-6.col-md-6.col-sm-12
+                    .confidential
+                        p
+                            | © САЙТ ЗАЩИЩЕН АВТОРСКИМИ ПРАВАМИ. ЛЮБОЕ КОПИРОВАНИЕ МАТЕРИАЛОВ САЙТА БЕЗ СОГЛАСОВАНИЯ И СПРАВООБЛАДАТЕЛЕМ ВЛЕЧЕТ К УГОЛОВНОЙ ОТВЕТСТВЕННОСТИ (СТ. 146 УК РФ). ЛЮБОЕ КОПИРОВАНИЕ ИНФОРМАЦИИ ЗАПРЕЩЕНО.
+                        p.text-center
+                            img.img-fluid(src='img/ogrn.png')
+                            img.img-fluid(src='img/adr.png')  
+                .col-lg-3.col-md-3.col-sm-12     
+                    .footer-email
+                        p  HELPMAGAZINA@GMAIL.COM                              
+                                                                          

@@ -1,0 +1,109 @@
+doctype html
+
+html
+    head
+        meta(charset="utf-8")
+        meta(content="" name="author")
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+        link(rel='icon', href='./img/favicon.ico', type='image/png')
+        link(rel='shortcut icon', href='./img/favicon.ico', type='image/png')
+
+        link(rel="stylesheet", href='css/jquery.bxslider.min.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M', crossorigin='anonymous')
+        link(rel='stylesheet' href='css/font-awesome.min.css')
+        link(rel='stylesheet' href='css/style.css')
+        link(rel="stylesheet", href="css/ouibounce.min.css")      
+        
+             
+        
+
+        title Беспроводной светильник
+
+    body
+        block content
+
+
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+        script(src="js/mask.js")
+        script(src="js/ouibounce.js")
+        script(src="js/timeme.min.js")
+        script(src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js")
+        script(src="js/app.js", defer="")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js", integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4", crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js", integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1", crossorigin="anonymous")
+
+        #ouibounce-modal
+                .underlay
+                .modal
+                    .modal-title
+                        h3
+                            | СТАНЬТЕ ОБЛАДАТЕЛЕМ БЕСПРОВОДНОГО СВЕТИЛЬНИКА, КАК ЭТО СДЕЛАЛИ УЖЕ 10.000 КЛИЕНТОВ ПО РФ И СНГ
+                        
+                    .modal-body
+                        .colmd9
+                            img(src="img/light.png", style="max-width: 210px;margin-bottom:20px;")
+                            |  - 
+                            p.textobm
+                                | Оплата при получении*
+                                br
+                                br
+                                | Доставка по РФ:
+                                br
+                                | - Почта от 5-14 дней
+                                br
+                                | - Курьер от 1 - 7 дней
+                        .colmd3
+                            span.zagolform Зачем уходить,
+                            br
+                            span.formstr2 пока не получил консультацию
+                            span.voprosik ?
+                            form#recall(action="https://borisovden.e-autopay.com/checkout/save_order_data.php", method="post", target="_blank", onsubmit="var re = /^((8|\+7|7)[\- ]?)?(\(?\d{3}\)?[\- ]?)[\d\- ]{7,10}$/i; if(!re.test(this.phone.value.trim())) {alert('Пожалуйста проверьте правильность заполнения поля Телефон!'); return false;}else{ga('send', 'event', 'send', 'click', 'send', '1');(new Image).src='//recreativ.ru/trck/adv/66444?act=conversion&ref='+encodeURIComponent(top.location)+'&rnd='+Math.floor(Math.random()*999);}")
+                                p.managerobform
+                                    | заполните форму заявки и менеджер
+                                    | компании свяжется с вами в течении 1 часа
+                                input.name.hidden-xs.hidden-sm(type="text", name="name", placeholder="Введите ФИО")
+                                br
+                                input#phone3.phone(type="tel", name="phone", placeholder="X-XXX-XXX-XX-XX", required="")
+                                br
+                                input.email(type="email", name="email", placeholder="E-mail (желательно)", pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})")
+                                br
+                                select.ea_select.ea_pay_mode(name="pay_mode", style="display:none;")
+                                    option(value="3") Наложенный платеж
+                                input#tovar_id(type="hidden", name="tovar_id", value="330216")
+                                input(type="hidden", name="additional_field1", value="")
+                                input#form_charset(type="hidden", name="form_charset", value="")
+                                input(type="hidden", name="form_id", value="33600")
+                                input#order_page_referer(type="hidden", name="order_page_referer", value="")
+                                input(type="submit", name="submit", value="Позвоните мне", style="color:#000;")
+                                div(style="width: 100%; margin: 0 auto; text-align: center; margin-top: 3px; color:#000; font-weight: bold; font-size: 12px;")
+                                    | Нажимая на кнопку, вы соглашаетесь с условиями 
+                                    br.hidden-lg.hidden-md
+                                    a(href="politics.html", target="_blank") Политики конфиденциальности
+        script.
+            // if you want to use the 'fire' or 'disable' fn,
+            // you need to save OuiBounce to an object
+            var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+            aggressive: true,
+            timer: 0,
+            callback: function() { console.log('ouibounce fired!'); }
+            });
+            $('body').on('click', function() {
+            $('#ouibounce-modal').hide();
+            });
+            $('#ouibounce-modal .modal-footer').on('click', function() {
+            $('#ouibounce-modal').hide();
+            });
+            $('#ouibounce-modal .modal').on('click', function(e) {
+            e.stopPropagation();
+            });
+
+            
+
+
+
+    
